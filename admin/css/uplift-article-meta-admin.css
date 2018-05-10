@@ -1,0 +1,34 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+/*----------------------------------------------------------------
+ * CSS For CMB2 Metaboxes
+ */
+
+/* Remove unnecessary spaing in the metaboxes */
+#cmb2-metabox-post-campaign-banner-metabox .cmb-row, 
+#cmb2-metabox-article-reblog-metabox .cmb-row,
+#cmb2-metabox-article-guest-post-metabox .cmb-row,
+#cmb2-metabox-article-references-metabox .cmb-row,
+#cmb2-metabox-free-text-metabox .cmb-row,
+#cmb2-metabox-mobile-banner-metabox .cmb-row,
+#cmb2-metabox-post-campaign-banner-metabox-new .cmb-row,
+#cmb2-metabox-article-subtitle-metabox .cmb-row,
+#cmb2-metabox-powerpress-podcast .cmb-row,
+div.cmb-row.cmb-type-pw-select {
+    padding: 1em 0 !important;
+    margin: 0 !important;
+	border-bottom: none !important;
+}
+
+/* Standardise the with of all input boxes */
+input.cmb2-text-url, 
+input.cmb2-text-medium, 
+input.regular-text,
+textarea.cmb2_textarea,
+textarea.cmb2-textarea-small,
+.select2-container {
+	width: 90% !important;
+}

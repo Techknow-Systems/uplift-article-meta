@@ -1,0 +1,206 @@
+/**
+ * All of the CSS for your public-facing functionality
+ */
+
+/**
+ *
+ * Desktop & Tablet CSS
+ * For 751px + viewports
+ *
+ **/
+
+/* --------------------------------------------------------------
+ * BANNERS
+ */
+
+/* Mobile Banner */
+#ubam-article-mobile-banner-container {
+    display: block;
+	border-top: 2px solid #ccc;
+    margin: 40px 0 40px 0;
+}
+
+#ubam-article-mobile-banner-container img {
+	margin-top: 4px;
+}
+
+.ubam-desktop-img {
+	margin-bottom: -7px;
+}
+
+.ubam-mobile-img {
+	display: none;
+}
+
+/* Campaign Banner */
+#ubam-campaign-banner-container {
+    margin-top: 0px;
+}
+
+#ubam-article-mobile-banner-textbox,
+#ubam-campaign-banner-container div {
+	position: relative; 
+	top: -7px; 
+	text-align: center; 
+	padding: 7px;
+	line-height: 120%;
+}
+
+#ubam-article-mobile-banner-container div {
+	padding: 3px 7px;
+}
+
+#ubam-campaign-banner-container div {
+	border-top: 2px solid #a099cb; 
+}
+
+.ubam-article-mobile-banner-spacer {
+	padding: 2px !important;
+	border-bottom: 2px solid #ccc;
+}
+
+/* ----------------------------------------------------------------
+ * METABOXES
+ */
+
+/* Don't display the references section unless we need to */
+.upllfe-article-references-wrapper {
+	display: none; 
+}
+
+/* References Container */
+#ubam-references-container {
+    margin: 0;
+}
+
+/* References Heading & Text */
+#ubam-references-container h3 {
+    margin-bottom: 7px;
+}
+
+#ubam-references-container span p {
+    margin-bottom: 5px; 
+}
+
+/* Don't display the references section unless we need to */
+.upllfe-podcast-freetext-wrapper {
+    display: none;
+}
+
+/**
+ *
+ * Mobile and Phablet CSS
+ * For <= 750px viewports
+ *
+ **/
+
+/* Show the mobile banner only on mobile devices */
+@media only screen and (max-width: 750px) {
+
+/* -----------------------------------------
+ * BANNERS 
+ */
+
+	#ubam-campaign-banner-container {
+	    margin-top: 10px;
+	}
+
+     #ubam-article-mobile-banner-container {
+        display: block;
+        margin: 25px 0 25px 0;
+		border-top: 1px solid #ccc;
+    }
+
+	.ubam-article-mobile-banner-spacer {
+		border-bottom: 1px solid #ccc;
+	}
+
+	.ubam-desktop-img {
+		display: none !important;
+		margin-bottom: 0;
+	}
+
+	.ubam-mobile-img {
+		display: block;
+	}
+
+}
+
+
+/* -----------------------------------------
+* BUTTONS
+*/
+
+/* Referenced by the shortcode show_read_next_button to display the Read Next button */
+
+.upllfe-article-meta-button {
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    border-color: #003384;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-width: 0px;
+    background: rgba(0, 51, 132, 1);
+    -pie-background: linear-gradient(rgba(0, 51, 132, 1) 30%, rgba(0, 51, 132, 1));
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, rgba(0, 51, 132, 1)), color-stop(1, rgba(0, 51, 132, 1)));
+    background: -moz-linear-gradient(rgba(0, 51, 132, 1) 30%, rgba(0, 51, 132, 1));
+    background: -o-linear-gradient(rgba(0, 51, 132, 1) 30%, rgba(0, 51, 132, 1));
+    background: linear-gradient(rgba(0, 51, 132, 1) 30%, rgba(0, 51, 132, 1));
+    min-height: 27px;
+}
+
+.upllfe-article-meta-button:hover {
+    background: rgba(24, 87, 160, 1);
+    -pie-background: linear-gradient(rgba(24, 87, 160, 1) 30%, rgbargba(24, 87, 160, 1));
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, rgba(24, 87, 160, 1)), color-stop(1, rgba(24, 87, 160, 1)));
+    background: -moz-linear-gradient(rgba(24, 87, 160, 1) 30%, rgba(24, 87, 160, 1));
+    background: -o-linear-gradient(rgba(24, 87, 160, 1) 30%, rgba(24, 87, 160, 1));
+    background: linear-gradient(rgba(24, 87, 160, 1) 30%, rgba(24, 87, 160, 1));
+}
+.upllfe-article-meta-button-text {
+    font-family: Verdana;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    padding-top: 6px;
+    padding-right: 12px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    line-height: 1em;
+    box-sizing: border-box;
+    display: block;
+    color: #fff;
+}
+
+.upllfe-article-meta-button-podcast {
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    border-color: #003384;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-width: 0px;
+    background: #cb65f5;
+    -pie-background: linear-gradient(#cb65f5 30%, #cb65f5);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #cb65f5), color-stop(1, #cb65f5));
+    background: -moz-linear-gradient(#cb65f5 30%, #cb65f5);
+    background: -o-linear-gradient(#cb65f5 30%, #cb65f5);
+    background: linear-gradient(#cb65f5 30%, #cb65f5);
+    min-height: 27px;
+}
+
+.upllfe-article-meta-button-podcast:hover {
+    background: #dd9df7;
+    -pie-background: linear-gradient(#dd9df7 30%, #dd9df7);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #dd9df7), color-stop(1, #dd9df7));
+    background: -moz-linear-gradient(#dd9df7 30%, #dd9df7);
+    background: -o-linear-gradient(#dd9df7 30%, #dd9df7);
+    background: linear-gradient(#dd9df7 30%, #dd9df7);
+}
+
+
